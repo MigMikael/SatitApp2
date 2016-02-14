@@ -17,7 +17,7 @@
     {{ PostDataResponse }}
 </div>
 
-<div ng-controller="MainController">
+<div ng-controller="ForecastController">
     <h1>{{ fiveDay.city_name}}</h1>
     <h2> 5-day forecast</h2>
     <div ng-repeat="day in fiveDay.days">
@@ -30,7 +30,7 @@
 
 <script src="js/app.js"></script>
 <script src="js/controllers/HttpGetController.js"></script>
-<script src="js/controllers/MainController.js"></script>
+<script src="js/controllers/ForecastController.js"></script>
 <script src="js/services/forecast.js"></script>
 </body>
 </html>
