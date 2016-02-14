@@ -13,10 +13,11 @@ app.controller("HttpGetController", function ($scope, $http) {
         var config = {
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8;'
+                //'Content-Type': 'application/json;charset=utf-8'
             }
         }
 
-        $http.post('http://172.27.176.165:3000/api/log_in', data, config)
+        $http.post('http://posttestserver.com/post.php', data, config)
             .success(function (data, status, headers, config) {
                 $scope.PostDataResponse = data;
             })
@@ -29,3 +30,5 @@ app.controller("HttpGetController", function ($scope, $http) {
     };
 
 });
+
+//http://posttestserver.com/post.php
